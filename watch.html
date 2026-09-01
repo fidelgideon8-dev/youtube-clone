@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Watch Video - YouTube Clone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="watch-body">
+
+    <!-- Header -->
+    <div class="header">
+
+        <div class="left-section">
+
+            <a href="index.html">
+                <img
+                    class="hamburger-menu"
+                    src="images/hamburger-menu.svg"
+                    alt="Menu"
+                >
+            </a>
+
+            <a href="index.html">
+                <img
+                    class="youtube-logo"
+                    src="images/youtube-logo.svg"
+                    alt="YouTube"
+                >
+            </a>
+
+        </div>
+
+        <div class="middle-section">
+
+            <input
+                class="Search-bar"
+                type="text"
+                placeholder="Search"
+                aria-label="Search"
+            >
+
+            <button class="search-button" type="button">
+
+                <img
+                    class="search-icon"
+                    src="images/search.svg"
+                    alt="Search"
+                >
+
+            </button>
+
+            <button class="voice-search-icon" type="button">
+
+                <img
+                    class="voice-search"
+                    src="images/voice-search-icon.svg"
+                    alt="Voice search"
+                >
+
+            </button>
+
+        </div>
+
+        <div class="right-section">
+
+            <div class="upload-icon-container">
+
+                <img
+                    class="upload-icon"
+                    src="images/upload.svg"
+                    alt="Create"
+                >
+
+            </div>
+
+            <img
+                class="youtube-apps-icon"
+                src="images/youtube-apps.svg"
+                alt="YouTube apps"
+            >
+
+            <div class="notifications-icon-container">
+
+                <img
+                    class="notifications-icon"
+                    src="images/notifications.svg"
+                    alt="Notifications"
+                >
+
+                <div class="notifications-count">
+                    3
+                </div>
+
+            </div>
+
+            <img
+                class="current-user-icon"
+                src="images/my-channel.jpeg"
+                alt="Your profile"
+            >
+
+        </div>
+
+    </div>
+
+
+    <!-- Watch Page -->
+    <main class="watch-page">
+
+        <div class="watch-video">
+
+            <div class="video-player">
+                <video id="videoPlayer" controls>
+                    <source src="" type="video/mp4">
+                    Your browser does not support the video player.
+                </video>
+            </div>
+
+
+            <h1 id="watchTitle">
+                Video Title
+            </h1>
+
+
+            <div class="watch-info">
+
+                <div class="watch-channel">
+
+                    <img
+                        id="watchProfile"
+                        class="profile-picture"
+                        src=""
+                        alt=""
+                    >
+
+                    <div>
+                        <p id="watchAuthor"></p>
+                        <p class="subscriber-text">
+                            1.2M subscribers
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <button class="subscribe-button">
+                    Subscribe
+                </button>
+
+            </div>
+
+
+            <div class="watch-actions">
+
+                <button>
+                    👍 Like
+                </button>
+
+                <button>
+                    👎 Dislike
+                </button>
+
+                <button>
+                    Share
+                </button>
+
+            </div>
+
+
+            <div class="watch-description">
+
+                <p id="watchStats"></p>
+
+                <p>
+                    Thanks for watching! This is a video from the
+                    YouTube Clone project.
+                </p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+  <script  src="script.js"></script>
+    <script src="watch.js"></script>
+
+</body>
+
+</html>
